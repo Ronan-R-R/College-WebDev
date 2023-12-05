@@ -10,5 +10,5 @@ work was either done alone or with classmates/lecturer
 - These snipets/projects I mostly don't have any original content/credits/notes to share limits.
 - These are all done during me learning WebDev amongst other subjects so some may seem short/repetitive/pointless or bunched together.
 - Some of these are purely examples, small tests or personal messing around where by I have terrible naming/near to no comments as most should be working.
-- Any missing content should be easy to replace/modify for perosnal testing.
+- Any missing content should be easy to replace/modify for personal testing.
 - all images mostly came from https://unsplash.com
