@@ -1,0 +1,23 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: Jojo 5s;
+}
+@keyframes Jojo {
+    0%{background-color: red;left: 0px;top: 0px;}
+    25%{background-color: yellow;left: 300px;top: 0px;}
+    50%{background-color: blue;left: 300px;top: 200px;}
+    75%{background-color: green;left: 0px;top: 200px;}
+    100%{background-color: red;left: 0px;top: 0px;}
+}
+form{
+    text-align: center;
+}
+input:focus{
+    border: 5px solid lightblue;
+    box-shadow: 10px 10px 10px black;
+    color: blue;
+    width: 300px;
+}
