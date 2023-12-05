@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-a{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border-radius: 30px;
+            background: maroon;/*Old browser*/
+            background: -webkit-linear-gradient(-45deg, maroon 15%, grey 38%, maroon 98%); /*Chrome, Safari*/
+            background: -ms-linear-gradient(-45deg, maroon 15%, grey 38%, maroon 98%);/*Microsoft Edge, how it use to be done*/
+            background: linear-gradient(135deg, maroon 15%, grey 38%, maroon 98%);/*W3C*/
+        }
+        .box-b{
+            height: 5em;
+            width: 12em;
+            background-color: navy;
+            border-radius: 1em 4em;
+            text-align: center;
+        }
+        span{
+            content: "\2630";
+            font-size: 28px;
+        }
+        h1{
+            text-shadow: 2px 2px 10px #888;
+        }
+        .shadow{
+            background-color: #f00;
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+            box-shadow: 10px 10px 5px #888;
+        }
+        .shadow-2{
+            background-color: #f00;
+            margin: 5px;
+            padding: 5px;
+            width: 250px;
+            box-shadow: 25px 10px 5px #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-a">
+        Box A
+    </div>
+    &nbsp;
+    &#9776;
+    <div class="box-b">
+        Box B
+    </div>
+    <span>
+        &#9776
+    </span>
+    <span>
+        &#88
+    </span>
+    <h1>Shadow Example box/text</h1>
+    <div class="shadow">
+        Firebox, safari/chrome, opera and IE9 users whould see a grey fading shadow under the box
+    </div>
+    <br>&nbsp<br>
+    <div class="shadow-2">
+        Firebox, safari/chrome, opera and IE9 users whould see a grey fading shadow under the box
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            Fname:" John",
+            Lname:" Doe",
+            age: 25
+        };
+
+        person.age
+        document.writeln(person.age + "<br>")
+        person["age"]
+        document.writeln(person.age + "<br>")
+        x="age";person[x]
+        document.writeln(x + "<hr>" + "<br>")
+
+        let subj = new Object()
+        subj.subject = " JavaScript";
+        subj.book = " HTML5 with JS and CSS";
+        document.writeln("The Subject is" +subj.subject + "<br>")
+        document.writeln("The Subject is" +subj.book + "<hr>" + "<br>")
+
+        function myClass(subjects, books){
+            this.subjects = subjects
+            this.books = books
+        }
+        ////
+        let subjs = new myClass("JS", " html with javescript and css");
+        document.writeln("The Subject is " +subjs.subjects + "<br>")
+        document.writeln("The Subject is " +subjs.books + "<hr>" + "<br>")
+    </script>
+</body>
+</html>

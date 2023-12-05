@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <!-- fetch api allow a broser to get or requests through HTTP data type can be XML or JSON -->
+
+    <!-- fetch("url").then(resonse => {
+        handle requests
+    }).then(error => {
+        handle errors
+    }) -->
+
+    <h1>Fetch API</h1>
+
+    <script>
+        //Fetch a JSON file
+        fetch("games.json").then(response => {
+            response.json().then(data => {
+                console.log(data)                
+            })
+        })
+    </script>
+</body>
+</html>

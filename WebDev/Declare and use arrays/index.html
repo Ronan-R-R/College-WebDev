@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const ages = [3, 10, 18, 20];
+
+        document.writeln(ages +"<hr>" + "<br>")
+
+        function checkAge(age) {
+        return age > 18;
+        }
+
+        test =  ages.find(checkAge);
+        document.writeln(test+ "<hr>" + "<br>") 
+
+        //////////////////////////////
+
+        const fruits = ["banana", "orange", "apple", "mango"];
+        fruits.push("kiwi", "lemon"); //add to the end
+        document.writeln( fruits + "<hr>" + "<br>")
+
+        fruits.pop(); //remove from end
+        document.writeln( fruits + "<hr>" + "<br>")
+
+        fruits.shift(); //remove from start
+        document.writeln( fruits + "<hr>" + "<br>")
+
+        fruits.unshift("water melon", "tomato");//add to front
+        document.writeln( fruits + "<hr>" + "<br>")
+
+        let length = fruits.length;
+        fruits.length = 3;
+        document.writeln(fruits + "<hr>" + "<br>") //displays array items with length limit
+        document.writeln(length + "<hr>" + "<br>") //length of array
+
+    </script>
+</body>
+</html>

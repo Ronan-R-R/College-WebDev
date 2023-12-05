@@ -1,0 +1,14 @@
+The RegExp() object represent a regular expression that is used for pattern matching.
+
+The creating of the object takes a pattern and flex parameters
+
+The pattern is a valid expression. The flex are either or both g(Glo)bal and i(Ignore case).
+
+Properties and Methods of RedExp() object
+
+Property/Method Description
+RedExp().$* represents multiline
+RedExp().$& represents last matching
+RedExp().$_ represents an input
+RedExp().$` represents lefContext
+RedExp().$' represents rightConext

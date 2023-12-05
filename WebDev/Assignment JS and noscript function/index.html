@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment JS and noscript function</title>
+
+    <script>
+        var a = 10 //Global variable
+        var b =20
+
+        function add(){
+            var a =20 //local variable
+            return a+b
+        }
+        
+        document.writeln("Hello " + a)
+        document.writeln(add())
+
+        //singal line comment
+        /*
+        block comment
+        */
+
+        const car = {
+        "type": "Ford",
+        "model": "1990",
+        "color": "white"
+        };
+
+        car.color = "red";
+        car.owner = "John";
+
+        document.writeln(car.type + " " + car.color + " " + car.owner);
+        
+    </script>
+
+</head>
+<body>
+    <noscript>
+        sorry, JavaScript require for full functionality
+    </noscript>
+</body>
+</html>

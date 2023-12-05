@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <form name="form1">
+        Enter your phone number:
+        <input type="text" name="phone" size="10">
+        <br><br>
+        <input type="button" value="Validate Phone" onclick="checkInput()">
+        <br><br>
+    </form>
+</body>
+<script>
+    function isPhone(str){
+        //xxx-xxx-xxxx
+        var regexp = /^(\d{3}-\d{3}-\d{4})$/;
+        return regexp.test(str);
+    }
+    function checkInput(){
+        var valid = true;
+        var phone = document.form1.phone.value;
+        if(!isPhone(phone)){
+            window.alert("Invalid phone number " + phone);
+            valid = false;
+        } else{
+            alert(phone + " is a valid phone number");
+        }
+    }
+</script>
+</html>

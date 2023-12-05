@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <script>
+        function rectangleExample(){
+            var ctx; //object
+            ctx=document.getElementById("canvas").getContext("2d");
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(20,80,70,140);
+
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "red";
+            ctx.strokeRect(140,80,70,140);
+            ctx.fillRect(260,80,70,140);
+            ctx.strokeRect(260,80,70,140);
+            ctx.strokeRect(380,80,70,140);
+            ctx.fillRect(380,80,70,140);
+        }
+    </script>
+</head>
+<body onload="rectangleExample()">
+    <canvas id="canvas" width="480" height="250">
+        Sorry this page page usesc<code>canvas</code>, and your browser does not support it
+    </canvas>
+</body>
+</html>
